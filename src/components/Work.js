@@ -58,6 +58,32 @@ const Work = () => {
                 </div>
               </div>
             </a>
+
+            <a
+              href="https://photosnap-app-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
+
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={preview}
+                  alt="img"
+                />
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">PhotoSnap App</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Marketing site for a photo-sharing app
+                  </span>
+                </div>
+              </div>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.2)}
@@ -82,6 +108,32 @@ const Work = () => {
                 <span className="text-3x1 text-white ">Project Title</span>
               </div>
             </div>
+            <a
+              href="https://photosnap-app-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
+
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={preview}
+                  alt="img"
+                />
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">PhotoSnap App</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Marketing site for a photo-sharing app
+                  </span>
+                </div>
+              </div>
+            </a>
+
             <a
               href="https://photosnap-app-one.vercel.app/"
               target="_blank"
