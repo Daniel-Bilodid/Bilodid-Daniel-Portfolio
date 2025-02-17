@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
+import avatar from "../assets/photos/avatar2.PNG";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -21,8 +22,10 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-          ></motion.div>
+            className="flex-1  h-[640px] mix-blend-lighten bg-top"
+          >
+            <img src={avatar} alt="avatar" />
+          </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
@@ -32,7 +35,7 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
-              I'm a Front-end Developer with over 2 years of experience.
+              I'm a Front-end Developer with over 1 year of experience.
             </h3>
             <p className="mb-6">
               Frontend Developer with two years of hands-on experience in
@@ -47,7 +50,7 @@ const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                 </div>
                 <div className="fonr-primary text-sm tracking-[2px]">
                   Years of <br /> Experience

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Image from "../assets/avatar.svg";
+import Image from "../assets/photos/banner1.JPG";
 
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -86,8 +86,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
+              <a href="https://www.linkedin.com/in/daniel-bilodid-b82439315/">
+                <FaLinkedin />
               </a>
               <a href="#">
                 <FaDribbble />
