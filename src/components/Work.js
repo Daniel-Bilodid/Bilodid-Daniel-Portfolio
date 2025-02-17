@@ -8,7 +8,8 @@ import preview from "../assets/preview.jpg";
 
 import countryPreview from "../assets/desktop-preview.jpg";
 
-import Img3 from "../assets/portfolio-img3.png";
+import portfolioImg from "../assets/portfolio-img-4.png";
+import coffePortfolio from "../assets/coffe_preview.jpg";
 
 const Work = () => {
   return (
@@ -27,8 +28,8 @@ const Work = () => {
                 My Latest <br /> Work.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-                exercitationem saepe suscipit ab, incidunt dolorem quae
+                Explore my recent web development projects, crafted with modern
+                frameworks and best coding practices.
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
@@ -60,7 +61,7 @@ const Work = () => {
             </a>
 
             <a
-              href="https://photosnap-app-one.vercel.app/"
+              href="https://coffe-roasters-three.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,12 +70,12 @@ const Work = () => {
 
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  src={preview}
+                  src={coffePortfolio}
                   alt="img"
                 />
 
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">PhotoSnap App</span>
+                  <span className="text-gradient">Coffe Roasters App</span>
                 </div>
 
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
@@ -92,22 +93,30 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-x1">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt="img"
-              />
+            <a
+              href="https://movie-trailers-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-x1">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={portfolioImg}
+                  alt="img"
+                />
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all durtation-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all durtation-500 z-50">
+                  <span className="text-gradient">Movie Trailers</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all durtation-700 z-50">
-                <span className="text-3x1 text-white ">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all durtation-700 z-50">
+                  <span className="text-3x1 text-white ">
+                    Multi page website
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
             <a
               href="https://photosnap-app-one.vercel.app/"
               target="_blank"
