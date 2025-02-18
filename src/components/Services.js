@@ -21,22 +21,25 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
-const icons = [
-  { src: htmlIcon, alt: "HTML" },
-  { src: cssIcon, alt: "CSS" },
-  { src: jsIcon, alt: "JS" },
-  { src: tsIcon, alt: "TS" },
-  { src: reactIcon, alt: "React" },
-  { src: reduxIcon, alt: "Redux" },
-  { src: vueIcon, alt: "Vue" },
-  { src: angularIcon, alt: "Angular" },
-  { src: tailwindIcon, alt: "Tailwind" },
-  { src: sassIcon, alt: "Sass" },
-  { src: bootstrapIcon, alt: "Bootstrap" },
-  { src: firebaseIcon, alt: "Firebase" },
-  { src: gitHubIcon, alt: "GitHub" },
-  { src: gulpIcon, alt: "Gulp" },
-  { src: webpackIcon, alt: "Gulp" },
+const tools = [
+  { src: tailwindIcon, alt: "Tailwind", name: "Tailwind" },
+  { src: sassIcon, alt: "Sass", name: "Sass" },
+  { src: bootstrapIcon, alt: "Bootstrap", name: "Bootstrap" },
+  { src: firebaseIcon, alt: "Firebase", name: "Firebase" },
+  { src: gitHubIcon, alt: "GitHub", name: "GitHub" },
+  { src: gulpIcon, alt: "Gulp", name: "Gulp" },
+  { src: webpackIcon, alt: "Webpack", name: "Webpack" },
+];
+
+const languages = [
+  { src: htmlIcon, alt: "HTML", name: "HTML" },
+  { src: cssIcon, alt: "CSS", name: "CSS" },
+  { src: jsIcon, alt: "JS", name: "JavaScript" },
+  { src: tsIcon, alt: "TS", name: "TypeScript" },
+  { src: reactIcon, alt: "React", name: "React" },
+  { src: reduxIcon, alt: "Redux", name: "Redux" },
+  { src: vueIcon, alt: "Vue", name: "Vue" },
+  { src: angularIcon, alt: "Angular", name: "Angular" },
 ];
 
 const Services = () => {
@@ -52,10 +55,6 @@ const Services = () => {
             className="flex-1   mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">Skills.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              {" "}
-              The skills, tools and technologies i use.
-            </h3>
           </motion.div>
 
           <motion.div
@@ -63,17 +62,51 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-center"
+            className="flex-1 flex xl:justify-around items-center flex-col xl:flex-row "
           >
-            <div className="flex flex-wrap justify-center items-center gap-8 max-w-[600px] mx-auto">
-              {icons.map((icon, index) => (
-                <img
-                  className="w-[64px] h-[64px]"
-                  key={index}
-                  src={icon.src}
-                  alt={icon.alt}
-                />
-              ))}
+            <div>
+              <h3 className="h3 max-w-[500px] mb-16 flex justify-center">
+                Languages & frameworks
+              </h3>
+              <div className="max-w-[600px] bg-white rounded-[20px] pt-[40px] pb-[40px]">
+                <div className="flex flex-wrap justify-center items-center gap-8 max-w-[500px] mx-auto">
+                  {languages.map((icon, index) => (
+                    <div>
+                      <img
+                        className="w-[84px] h-[84px]"
+                        key={index}
+                        src={icon.src}
+                        alt={icon.alt}
+                      />
+                      <p className="text-black flex justify-center mt-[5px]">
+                        {icon.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="h3 max-w-[500px] mb-16 flex justify-center">
+                Other tools
+              </h3>
+              <div className="max-w-[600px] bg-white rounded-[20px] pt-[40px] pb-[40px]">
+                <div className="flex flex-wrap justify-center items-center gap-8 max-w-[500px] mx-auto">
+                  {tools.map((icon, index) => (
+                    <div>
+                      <img
+                        className="w-[84px] h-[84px]"
+                        key={index}
+                        src={icon.src}
+                        alt={icon.alt}
+                      />
+                      <p className="text-black flex justify-center mt-[5px]">
+                        {icon.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

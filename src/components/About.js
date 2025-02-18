@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 import avatar from "../assets/photos/avatar2.PNG";
 
 const About = () => {
@@ -14,9 +15,9 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section className="section" id="about" ref={ref}>
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+    <section className="section min-h-screen" id="about" ref={ref}>
+      <div className="container mx-auto ">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -24,7 +25,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1  h-[640px] mix-blend-lighten bg-top"
           >
-            <img src={avatar} alt="avatar" />
+            <img className="scale-x-[-1]" src={avatar} alt="avatar" />
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -74,11 +75,24 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Download CV</button>
-
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <a
+                href="/DanielBilodidCV.pdf"
+                download="DanielBilodidCV.pdf"
+                type="application/pdf"
+                className="btn btn-lg flex items-center justify-center"
+              >
+                Download CV
               </a>
+
+              <Link
+                to="work"
+                smooth={true}
+                spy={true}
+                offset={10}
+                className="text-gradient btn-link"
+              >
+                My Portfolio
+              </Link>
             </div>
           </motion.div>
         </div>

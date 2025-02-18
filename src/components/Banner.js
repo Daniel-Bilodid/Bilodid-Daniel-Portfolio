@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "../assets/photos/banner1.JPG";
+import Image from "../assets/photos/banner2.PNG";
 
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
@@ -74,9 +74,15 @@ const Banner = () => {
               >
                 <button className="btn btn-lg ">Contact me</button>
               </Link>
-              <a href="#" className="text-gradient btn-link">
+              <Link
+                to="work"
+                smooth={true}
+                spy={true}
+                offset={10}
+                className="text-gradient btn-link"
+              >
                 My Portfolio
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div
