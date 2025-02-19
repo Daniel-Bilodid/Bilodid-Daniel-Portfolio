@@ -62,7 +62,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex xl:justify-around items-center flex-col xl:flex-row "
+            className="flex-1 flex xl:justify-around items-center flex-col xl:flex-row xl:mt-[50px]"
           >
             <div>
               <h3 className="h3 max-w-[500px] mb-16 flex justify-center">
@@ -87,7 +87,7 @@ const Services = () => {
               </div>
             </div>
             <div>
-              <h3 className="h3 max-w-[500px] mb-16 flex justify-center">
+              <h3 className="h3 max-w-[500px] mb-16 flex justify-center mt-[40px] xl:mt-0">
                 Other tools
               </h3>
               <div className="max-w-[600px] bg-white rounded-[20px] pt-[40px] pb-[40px]">
@@ -100,7 +100,7 @@ const Services = () => {
                         src={icon.src}
                         alt={icon.alt}
                       />
-                      <p className="text-black flex justify-center mt-[5px]">
+                      <p className="text-black flex justify-center mt-[5px] ">
                         {icon.name}
                       </p>
                     </div>

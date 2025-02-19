@@ -79,7 +79,7 @@ const Banner = () => {
                 smooth={true}
                 spy={true}
                 offset={10}
-                className="text-gradient btn-link"
+                className="text-gradient btn-link cursor-pointer"
               >
                 My Portfolio
               </Link>

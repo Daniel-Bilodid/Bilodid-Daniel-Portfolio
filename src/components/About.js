@@ -17,7 +17,7 @@ const About = () => {
   return (
     <section className="section min-h-screen" id="about" ref={ref}>
       <div className="container mx-auto ">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen xl:mt-[-131px]">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -41,8 +41,8 @@ const About = () => {
             <p className="mb-6">
               Frontend Developer with two years of hands-on experience in
               building responsive and dynamic web applications. Proficient in
-              modern technologies like JavaScript, TypeScript, React, and
-              Vue.js, I excel at creating visually appealing and highly
+              modern technologies like JavaScript, TypeScript, React, Vue.js and
+              Angular, I excel at creating visually appealing and highly
               functional user interfaces. Known for my quick learning ability
               and attention to detail, I thrive on transforming design concepts
               into seamless digital experiences.
@@ -89,7 +89,7 @@ const About = () => {
                 smooth={true}
                 spy={true}
                 offset={10}
-                className="text-gradient btn-link"
+                className="text-gradient btn-link cursor-pointer"
               >
                 My Portfolio
               </Link>

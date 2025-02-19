@@ -10,6 +10,7 @@ import countryPreview from "../assets/desktop-preview.jpg";
 
 import portfolioImg from "../assets/portfolio-img-4.png";
 import coffePortfolio from "../assets/coffe_preview.jpg";
+import spacePortfolio from "../assets/previewSpace.jpg";
 
 const Work = () => {
   return (
@@ -31,8 +32,45 @@ const Work = () => {
                 Explore my recent web development projects, crafted with modern
                 frameworks and best coding practices.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.frontendmentor.io/profile/Daniel-Bilodid",
+                    "_blank"
+                  )
+                }
+                className="btn btn-sm"
+              >
+                View all projects
+              </button>
             </div>
+
+            <a
+              href="https://coffe-roasters-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
+
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={coffePortfolio}
+                  alt="img"
+                />
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">Coffe Roasters App</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Coffeeroasters subscription site
+                  </span>
+                </div>
+              </div>
+            </a>
+
             <a
               href="https://countries-ruddy-alpha.vercel.app/"
               target="_blank"
@@ -55,32 +93,6 @@ const Work = () => {
                   <span className="text-3xl text-white">
                     Multi-page website designed to showcase a comprehensive list
                     of countries and their key information.
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="https://coffe-roasters-three.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer"></div>
-
-                <img
-                  className="group-hover:scale-125 transition-all duration-500"
-                  src={coffePortfolio}
-                  alt="img"
-                />
-
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">Coffe Roasters App</span>
-                </div>
-
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">
-                    Marketing site for a photo-sharing app
                   </span>
                 </div>
               </div>
@@ -110,9 +122,9 @@ const Work = () => {
                   <span className="text-gradient">Movie Trailers</span>
                 </div>
 
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all durtation-700 z-50">
-                  <span className="text-3x1 text-white ">
-                    Multi page website
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Movie trailers multi-page website
                   </span>
                 </div>
               </div>
@@ -153,17 +165,17 @@ const Work = () => {
 
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  src={preview}
+                  src={spacePortfolio}
                   alt="img"
                 />
 
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">PhotoSnap App</span>
+                  <span className="text-gradient">Space App</span>
                 </div>
 
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                   <span className="text-3xl text-white">
-                    Marketing site for a photo-sharing app
+                    Space tourism multi-page website
                   </span>
                 </div>
               </div>
